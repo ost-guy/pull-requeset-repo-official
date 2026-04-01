@@ -1,6 +1,6 @@
 maintainer="osty"
 pkgname="btop-s"
-pkgver="1.4.0"
+pkgver="1.4.6"
 pkgrel=1
 pkgdesc="Monitor de recursos moderno (C++) - v3 para 15IKBR"
 arch=("amd64")
