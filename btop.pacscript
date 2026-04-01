@@ -1,5 +1,5 @@
-maintainer="osty <seu@email.com>"
-pkgname="btop-git"
+maintainer="osty"
+pkgname="btop-s"
 pkgver="1.4.0"
 pkgrel=1
 pkgdesc="Monitor de recursos moderno (C++) - v3 para 15IKBR"
