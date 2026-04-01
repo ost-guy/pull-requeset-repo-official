@@ -17,7 +17,7 @@ build() {
     export CFLAGS="-march=x86-64-v3 -O3 -pipe"
     export CXXFLAGS="-march=x86-64-v3 -O3 -pipe"
     
-    make ADDFLAGS="-march=x86-64-v3"
+    make ADDFLAGS="-march=x86-64-v3" -j$(nproc)
 }
 
 package() {
