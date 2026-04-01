@@ -13,8 +13,11 @@ conflicts=("btop" "btop-bin")
 
 build() {
     cd "${srcdir}/btop"
-    # Aqui o seu i7 vai usar o -j9 do config.fish
-    make
+    # Forçando explicitamente a otimização v3 e o uso de todos os cores
+    export CFLAGS="-march=x86-64-v3 -O3 -pipe"
+    export CXXFLAGS="-march=x86-64-v3 -O3 -pipe"
+    
+    make ADDFLAGS="-march=x86-64-v3"
 }
 
 package() {
